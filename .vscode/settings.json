@@ -22,13 +22,9 @@
         "*.run.xml": true,
         "*.synctex.gz": true,
         "*.toc": true,
-<<<<<<< Updated upstream
-        "*.lof": true
-    }
-=======
         "*.lof": true,
         "*.gls": true,
-        "*.glg": true
+        "*.glg": true,
     },
     "latex-workshop.latex.tools": [
         {
@@ -156,5 +152,4 @@
             "env": {}
         }
     ]
->>>>>>> Stashed changes
 }
