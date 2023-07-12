@@ -36,10 +36,22 @@
   \ifMultipleAuthors{We are}{I am} aware that a dishonest declaration will entail legal consequences.
 }
 
-\vspace{3em}
+\vspace{2em}
 
 \releaseLocation, \iflang{de}{den}\iflang{en}{the} \releaseDate
-\vspace{4em}
 
-\rule{6cm}{0.4pt}\\
-\documentAuthor
+\ifMultipleAuthors{
+  \vspace{2em}
+  \foreach \author in \documentAuthor {
+    \begin{tabular}{l}
+      \\ \cline{1-1} 
+      {\footnotesize \author} \hspace{40mm} \\
+    \end{tabular}
+    \vspace{4mm}
+  
+  }
+}{
+  \vspace{4em}
+  \rule{6cm}{0.4pt}\\
+  {\footnotesize \documentAuthor}
+}
